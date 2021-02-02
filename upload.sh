@@ -1,6 +1,6 @@
 #!/bin/bash
-S3_BUCKET_NAME=""
-BASE_URL=""
+S3_BUCKET_NAME="share.ross.lol"
+BASE_URL="http://share.ross.lol"
 NEW_UUID=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
 filename=$(basename -- "$1")
 extension="${filename##*.}"
